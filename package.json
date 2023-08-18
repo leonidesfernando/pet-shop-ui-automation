@@ -1,0 +1,23 @@
+{
+  "name": "pet-shop3-play",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install:chromium": "playwright install chromium",
+    "test": "playwright test --project=chromium",
+    "test:headless": "HEADLESS_MODE=true playwright test --project=chromium",
+    "start:server": "serve ../../node_modules/@metamask/test-dapp/dist -p 3000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.37.0",
+    "@synthetixio/synpress": "3.7.2-beta.3",
+    "serve": "^14.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
